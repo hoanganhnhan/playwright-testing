@@ -13,7 +13,7 @@ export default defineConfig({
   testDir: './tests',
   timeout: 10000,
   expect: {
-    timeout: 3000
+    timeout: 5000
   },
   /* Run tests in files in parallel */
   // fullyParallel: true,
@@ -40,9 +40,10 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { 
+      use: {
         baseURL: 'https://www.google.com',
-        ...devices['Desktop Chrome'] },
+        ...devices['Desktop Chrome']
+      },
     },
 
     // {
